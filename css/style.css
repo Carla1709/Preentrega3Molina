@@ -148,9 +148,41 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer div h3 {
-  font-size: small;
+
+footer h2{
+  color:#662483;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
+
+footer .social_icon, .direccion{
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;    
+
+}
+
+footer .social_icon li{
+  list-style: none;
+}
+
+footer .social_icon li a{
+  font-size: 2em;
+  color:#662483;
+  margin: 0 10px;
+  display:inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+  transform: translateY(-10px);
+}
+
+
 
 /* Pagina SERVICIOS */
 .titulo-servicios {
