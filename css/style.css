@@ -138,11 +138,129 @@ h3 {
   font-size: medium;
 }
 
-/* Footer */
+
+
+
+
+/* Pagina SERVICIOS */
+.titulo-servicios {
+  color: #044698;
+}
+.titulo-servicios h1 {
+  text-align: center;
+  margin: 20 0 15px 0;
+  font-weight: 300;
+}
+
+/* PAGINA "TRABAJOS REALIZADOS" -- BOOTSTRAP -- CARRUSEL */
+
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+.body-contacto{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background:#67248338;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  }
+  
+ .contacto-container{
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  background:#363953;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  }
+.form-container{
+  padding: 20px;
+}
+  
+.form-container h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+  
+.contacto-form{
+  display: grid;
+  row-gap: 1rem;
+}
+  
+ .contact-form input,
+ .contact-form textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #2c2f48;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius:0.4rem
+}
+  
+.contacto-form textarea{
+  resize: none;
+  height: 200px;
+}
+  
+.contacto-form .enviar-button{
+  border: none;
+  outline: none;
+  background: #cecece;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+  
+  .contacto-form .enviar-button:hover{
+   background: hsla(291, 79%, 34%, 0.8);
+   transition: 0.3s all linear;
+  }
+.map iframe{
+   width: 100%;
+   height: 100%;
+}
+  
+  /* Responsive */
+  
+@media (max-width:964px){
+  .contacto-container {
+   margin: 0 auto;
+   width: 90%;
+  }
+}
+@media (max-width: 700px){
+ .contacto-container{
+   grid-template-columns: 1fr;
+   gap: 1rem;
+   margin-top: 20rem !important;
+  }
+}
+  
+.map iframe{
+   height: 400px
+}
+
+
+  /* Footer */
 footer {
   height: 100px;
   background: #cecece;
-  padding: 0 50px;
+  padding: 0 30px;
   color: #662483;
   display: flex;
   justify-content: space-between;
@@ -155,6 +273,8 @@ footer h2{
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 1.1em;
+  font-family: small;
+
 }
 
 footer .social_icon, .direccion{
@@ -181,20 +301,3 @@ footer .social_icon li a{
 footer .social_icon li a:hover{
   transform: translateY(-10px);
 }
-
-
-
-/* Pagina SERVICIOS */
-.titulo-servicios {
-  color: #044698;
-}
-.titulo-servicios h1 {
-  text-align: center;
-  margin: 20 0 15px 0;
-  font-weight: 300;
-}
-
-/* PAGINA "TRABAJOS REALIZADOS" -- BOOTSTRAP -- CARRUSEL */
-
-
-/*# sourceMappingURL=style.css.map */
